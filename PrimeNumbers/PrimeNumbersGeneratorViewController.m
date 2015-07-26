@@ -41,6 +41,7 @@ static const int MaximumValue = 100000000; //Bigger values requires better prime
 }
 
 - (void)startGeneration {
+    [self.delegate primeNumbersGeneratorViewControllerDidStartGeneration:self];
     self.primeNumberGenerator = [[PrimeNumbersGenerator alloc] initWithLimit:[self.limitField.text integerValue]];
     [self.primeNumberGenerator generateWithCompletionBlock:^(NSArray *result) {
         [self.delegate primeNumbersGeneratorViewController:self didFinishWithResult:result];

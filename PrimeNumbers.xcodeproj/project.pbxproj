@@ -17,6 +17,11 @@
 		0A4E752A1B6574F200525924 /* PrimeNumbersGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75241B6574F200525924 /* PrimeNumbersGenerator.m */; };
 		0A4E752B1B6574F200525924 /* PrimeNumbersGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75261B6574F200525924 /* PrimeNumbersGeneratorViewController.m */; };
 		0A4E752C1B6574F200525924 /* PrimeNumbersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75281B6574F200525924 /* PrimeNumbersViewController.m */; };
+		0A4E75301B657CEA00525924 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E752E1B657CEA00525924 /* Model.xcdatamodeld */; };
+		0A4E75331B657D1300525924 /* DataStoreConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75321B657D1300525924 /* DataStoreConfiguration.m */; };
+		0A4E75361B657DA600525924 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75351B657DA600525924 /* Session.m */; };
+		0A4E753B1B657E1200525924 /* SessionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E753A1B657E1200525924 /* SessionsViewController.m */; };
+		0A4E75401B65885C00525924 /* PrimeNumbersArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E753F1B65885C00525924 /* PrimeNumbersArchive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,15 @@
 		0A4E75261B6574F200525924 /* PrimeNumbersGeneratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeNumbersGeneratorViewController.m; sourceTree = "<group>"; };
 		0A4E75271B6574F200525924 /* PrimeNumbersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeNumbersViewController.h; sourceTree = "<group>"; };
 		0A4E75281B6574F200525924 /* PrimeNumbersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeNumbersViewController.m; sourceTree = "<group>"; };
+		0A4E752F1B657CEA00525924 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		0A4E75311B657D1300525924 /* DataStoreConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStoreConfiguration.h; sourceTree = "<group>"; };
+		0A4E75321B657D1300525924 /* DataStoreConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStoreConfiguration.m; sourceTree = "<group>"; };
+		0A4E75341B657DA600525924 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		0A4E75351B657DA600525924 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		0A4E75391B657E1200525924 /* SessionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsViewController.h; sourceTree = "<group>"; };
+		0A4E753A1B657E1200525924 /* SessionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsViewController.m; sourceTree = "<group>"; };
+		0A4E753E1B65885C00525924 /* PrimeNumbersArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeNumbersArchive.h; sourceTree = "<group>"; };
+		0A4E753F1B65885C00525924 /* PrimeNumbersArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeNumbersArchive.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,16 +104,16 @@
 		0A4E74FA1B65702800525924 /* PrimeNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				0A4E752D1B657CDE00525924 /* Data */,
+				0A4E75381B657DE900525924 /* ViewControllers */,
 				0A4E74FF1B65702800525924 /* AppDelegate.h */,
 				0A4E75001B65702800525924 /* AppDelegate.m */,
-				0A4E75211B6574F100525924 /* MainViewController.h */,
-				0A4E75221B6574F200525924 /* MainViewController.m */,
 				0A4E75231B6574F200525924 /* PrimeNumbersGenerator.h */,
 				0A4E75241B6574F200525924 /* PrimeNumbersGenerator.m */,
-				0A4E75251B6574F200525924 /* PrimeNumbersGeneratorViewController.h */,
-				0A4E75261B6574F200525924 /* PrimeNumbersGeneratorViewController.m */,
-				0A4E75271B6574F200525924 /* PrimeNumbersViewController.h */,
-				0A4E75281B6574F200525924 /* PrimeNumbersViewController.m */,
+				0A4E75311B657D1300525924 /* DataStoreConfiguration.h */,
+				0A4E75321B657D1300525924 /* DataStoreConfiguration.m */,
+				0A4E753E1B65885C00525924 /* PrimeNumbersArchive.h */,
+				0A4E753F1B65885C00525924 /* PrimeNumbersArchive.m */,
 				0A4E75051B65702800525924 /* Main.storyboard */,
 				0A4E75081B65702800525924 /* Images.xcassets */,
 				0A4E750A1B65702800525924 /* LaunchScreen.xib */,
@@ -132,6 +146,31 @@
 				0A4E75161B65702800525924 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A4E752D1B657CDE00525924 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E752E1B657CEA00525924 /* Model.xcdatamodeld */,
+				0A4E75341B657DA600525924 /* Session.h */,
+				0A4E75351B657DA600525924 /* Session.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		0A4E75381B657DE900525924 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E75211B6574F100525924 /* MainViewController.h */,
+				0A4E75221B6574F200525924 /* MainViewController.m */,
+				0A4E75251B6574F200525924 /* PrimeNumbersGeneratorViewController.h */,
+				0A4E75261B6574F200525924 /* PrimeNumbersGeneratorViewController.m */,
+				0A4E75271B6574F200525924 /* PrimeNumbersViewController.h */,
+				0A4E75281B6574F200525924 /* PrimeNumbersViewController.m */,
+				0A4E75391B657E1200525924 /* SessionsViewController.h */,
+				0A4E753A1B657E1200525924 /* SessionsViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,10 +275,15 @@
 			files = (
 				0A4E75011B65702800525924 /* AppDelegate.m in Sources */,
 				0A4E752C1B6574F200525924 /* PrimeNumbersViewController.m in Sources */,
+				0A4E75331B657D1300525924 /* DataStoreConfiguration.m in Sources */,
 				0A4E75291B6574F200525924 /* MainViewController.m in Sources */,
+				0A4E75301B657CEA00525924 /* Model.xcdatamodeld in Sources */,
 				0A4E752A1B6574F200525924 /* PrimeNumbersGenerator.m in Sources */,
 				0A4E74FE1B65702800525924 /* main.m in Sources */,
 				0A4E752B1B6574F200525924 /* PrimeNumbersGeneratorViewController.m in Sources */,
+				0A4E75361B657DA600525924 /* Session.m in Sources */,
+				0A4E753B1B657E1200525924 /* SessionsViewController.m in Sources */,
+				0A4E75401B65885C00525924 /* PrimeNumbersArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +490,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0A4E752E1B657CEA00525924 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0A4E752F1B657CEA00525924 /* Model.xcdatamodel */,
+			);
+			currentVersion = 0A4E752F1B657CEA00525924 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0A4E74F01B65702800525924 /* Project object */;
 }

@@ -12,6 +12,7 @@
 
 @protocol PrimeNumbersGeneratorViewControllerDelegate <NSObject>
 
+- (void)primeNumbersGeneratorViewControllerDidStartGeneration:(PrimeNumbersGeneratorViewController *)controller;
 - (void)primeNumbersGeneratorViewController:(PrimeNumbersGeneratorViewController *)controller didFinishWithResult:(NSArray *)result;
 
 @end
