@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PrimeNumbersViewController.h
 //  PrimeNumbers
 //
 //  Created by Dmitry Ivulyov on 26.07.15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PrimeNumbersViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *numbers;
 
 @end
-

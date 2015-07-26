@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		0A4E74FE1B65702800525924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E74FD1B65702800525924 /* main.m */; };
 		0A4E75011B65702800525924 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75001B65702800525924 /* AppDelegate.m */; };
-		0A4E75041B65702800525924 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75031B65702800525924 /* ViewController.m */; };
 		0A4E75071B65702800525924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E75051B65702800525924 /* Main.storyboard */; };
 		0A4E75091B65702800525924 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E75081B65702800525924 /* Images.xcassets */; };
 		0A4E750C1B65702800525924 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E750A1B65702800525924 /* LaunchScreen.xib */; };
 		0A4E75181B65702800525924 /* PrimeNumbersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75171B65702800525924 /* PrimeNumbersTests.m */; };
+		0A4E75291B6574F200525924 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75221B6574F200525924 /* MainViewController.m */; };
+		0A4E752A1B6574F200525924 /* PrimeNumbersGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75241B6574F200525924 /* PrimeNumbersGenerator.m */; };
+		0A4E752B1B6574F200525924 /* PrimeNumbersGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75261B6574F200525924 /* PrimeNumbersGeneratorViewController.m */; };
+		0A4E752C1B6574F200525924 /* PrimeNumbersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75281B6574F200525924 /* PrimeNumbersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,20 @@
 		0A4E74FD1B65702800525924 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A4E74FF1B65702800525924 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A4E75001B65702800525924 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A4E75021B65702800525924 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0A4E75031B65702800525924 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A4E75061B65702800525924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A4E75081B65702800525924 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0A4E750B1B65702800525924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0A4E75111B65702800525924 /* PrimeNumbersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeNumbersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4E75161B65702800525924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A4E75171B65702800525924 /* PrimeNumbersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrimeNumbersTests.m; sourceTree = "<group>"; };
+		0A4E75211B6574F100525924 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0A4E75221B6574F200525924 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0A4E75231B6574F200525924 /* PrimeNumbersGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeNumbersGenerator.h; sourceTree = "<group>"; };
+		0A4E75241B6574F200525924 /* PrimeNumbersGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeNumbersGenerator.m; sourceTree = "<group>"; };
+		0A4E75251B6574F200525924 /* PrimeNumbersGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeNumbersGeneratorViewController.h; sourceTree = "<group>"; };
+		0A4E75261B6574F200525924 /* PrimeNumbersGeneratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeNumbersGeneratorViewController.m; sourceTree = "<group>"; };
+		0A4E75271B6574F200525924 /* PrimeNumbersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeNumbersViewController.h; sourceTree = "<group>"; };
+		0A4E75281B6574F200525924 /* PrimeNumbersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeNumbersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +92,14 @@
 			children = (
 				0A4E74FF1B65702800525924 /* AppDelegate.h */,
 				0A4E75001B65702800525924 /* AppDelegate.m */,
-				0A4E75021B65702800525924 /* ViewController.h */,
-				0A4E75031B65702800525924 /* ViewController.m */,
+				0A4E75211B6574F100525924 /* MainViewController.h */,
+				0A4E75221B6574F200525924 /* MainViewController.m */,
+				0A4E75231B6574F200525924 /* PrimeNumbersGenerator.h */,
+				0A4E75241B6574F200525924 /* PrimeNumbersGenerator.m */,
+				0A4E75251B6574F200525924 /* PrimeNumbersGeneratorViewController.h */,
+				0A4E75261B6574F200525924 /* PrimeNumbersGeneratorViewController.m */,
+				0A4E75271B6574F200525924 /* PrimeNumbersViewController.h */,
+				0A4E75281B6574F200525924 /* PrimeNumbersViewController.m */,
 				0A4E75051B65702800525924 /* Main.storyboard */,
 				0A4E75081B65702800525924 /* Images.xcassets */,
 				0A4E750A1B65702800525924 /* LaunchScreen.xib */,
@@ -219,9 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4E75041B65702800525924 /* ViewController.m in Sources */,
 				0A4E75011B65702800525924 /* AppDelegate.m in Sources */,
+				0A4E752C1B6574F200525924 /* PrimeNumbersViewController.m in Sources */,
+				0A4E75291B6574F200525924 /* MainViewController.m in Sources */,
+				0A4E752A1B6574F200525924 /* PrimeNumbersGenerator.m in Sources */,
 				0A4E74FE1B65702800525924 /* main.m in Sources */,
+				0A4E752B1B6574F200525924 /* PrimeNumbersGeneratorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
