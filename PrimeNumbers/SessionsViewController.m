@@ -13,6 +13,8 @@
 #import "PrimeNumbersViewController.h"
 #import "PrimeNumbersArchive.h"
 
+#import "UIViewController+HUD.h"
+
 @interface SessionsViewController () <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
@@ -92,10 +94,14 @@
         PrimeNumbersViewController *controller = segue.destinationViewController;
         Session *session = [self objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
         NSNumber *maximumValue = session.maximumValue;
+        [self.navigationController showHUDWithText:NSLocalizedString(@"Loading data...", @"Loading data...")];
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
             PrimeNumbersArchive *archive = [[PrimeNumbersArchive alloc] init];
             NSArray *numbers = [archive archivedNumbers];
             controller.numbers = [numbers filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF <= %@", maximumValue]];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.navigationController hideHUD];
+            });
         });
     }
 }

@@ -16,6 +16,8 @@
 
 #import "PrimeNumbersArchive.h"
 
+#import "UIViewController+HUD.h"
+
 @interface MainViewController () <PrimeNumbersGeneratorViewControllerDelegate>
 
 @property (nonatomic, strong) DataStoreConfiguration *dataStoreConfiguration;
@@ -58,7 +60,9 @@
     }
     
     PrimeNumbersArchive *archive = [[PrimeNumbersArchive alloc] init];
+    [self.navigationController showHUDWithText:NSLocalizedString(@"Saving results to disk...", @"Saving results to disk...")];
     [archive updateArchiveWithNumbers:results];
+    [self.navigationController hideHUD];
 }
 
 #pragma mark - Navigation

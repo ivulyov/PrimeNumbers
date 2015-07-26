@@ -22,6 +22,8 @@
 		0A4E75361B657DA600525924 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75351B657DA600525924 /* Session.m */; };
 		0A4E753B1B657E1200525924 /* SessionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E753A1B657E1200525924 /* SessionsViewController.m */; };
 		0A4E75401B65885C00525924 /* PrimeNumbersArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E753F1B65885C00525924 /* PrimeNumbersArchive.m */; };
+		0A4E75441B6592B000525924 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E75431B6592B000525924 /* MBProgressHUD.m */; };
+		0A4E75501B65936000525924 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E754F1B65936000525924 /* UIViewController+HUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		0A4E753A1B657E1200525924 /* SessionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsViewController.m; sourceTree = "<group>"; };
 		0A4E753E1B65885C00525924 /* PrimeNumbersArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeNumbersArchive.h; sourceTree = "<group>"; };
 		0A4E753F1B65885C00525924 /* PrimeNumbersArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeNumbersArchive.m; sourceTree = "<group>"; };
+		0A4E75421B6592B000525924 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Libraries/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		0A4E75431B6592B000525924 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Libraries/MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		0A4E754E1B65936000525924 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		0A4E754F1B65936000525924 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0A4E74FA1B65702800525924 /* PrimeNumbers */,
+				0A4E75411B65929B00525924 /* Frameworks */,
 				0A4E75141B65702800525924 /* PrimeNumbersTests */,
 				0A4E74F91B65702800525924 /* Products */,
 			);
@@ -114,6 +121,8 @@
 				0A4E75321B657D1300525924 /* DataStoreConfiguration.m */,
 				0A4E753E1B65885C00525924 /* PrimeNumbersArchive.h */,
 				0A4E753F1B65885C00525924 /* PrimeNumbersArchive.m */,
+				0A4E754E1B65936000525924 /* UIViewController+HUD.h */,
+				0A4E754F1B65936000525924 /* UIViewController+HUD.m */,
 				0A4E75051B65702800525924 /* Main.storyboard */,
 				0A4E75081B65702800525924 /* Images.xcassets */,
 				0A4E750A1B65702800525924 /* LaunchScreen.xib */,
@@ -171,6 +180,23 @@
 				0A4E753A1B657E1200525924 /* SessionsViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0A4E75411B65929B00525924 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E75511B65937C00525924 /* MBProgressHUD */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A4E75511B65937C00525924 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E75421B6592B000525924 /* MBProgressHUD.h */,
+				0A4E75431B6592B000525924 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +306,9 @@
 				0A4E75301B657CEA00525924 /* Model.xcdatamodeld in Sources */,
 				0A4E752A1B6574F200525924 /* PrimeNumbersGenerator.m in Sources */,
 				0A4E74FE1B65702800525924 /* main.m in Sources */,
+				0A4E75441B6592B000525924 /* MBProgressHUD.m in Sources */,
 				0A4E752B1B6574F200525924 /* PrimeNumbersGeneratorViewController.m in Sources */,
+				0A4E75501B65936000525924 /* UIViewController+HUD.m in Sources */,
 				0A4E75361B657DA600525924 /* Session.m in Sources */,
 				0A4E753B1B657E1200525924 /* SessionsViewController.m in Sources */,
 				0A4E75401B65885C00525924 /* PrimeNumbersArchive.m in Sources */,
