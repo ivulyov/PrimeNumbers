@@ -10,6 +10,8 @@
 
 @interface PrimeNumbersArchive : NSObject
 
+@property (nonatomic, assign) BOOL cachingEnabled;
+
 - (NSArray *)archivedNumbers;
 - (void)updateArchiveWithNumbers:(NSArray *)numbers;
 

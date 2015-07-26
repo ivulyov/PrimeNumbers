@@ -81,7 +81,7 @@
     Session *session = [self objectAtIndexPath:indexPath];
     cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", [self.dateFormatter stringFromDate:session.startDate],
                            [self.dateFormatter stringFromDate:session.endDate]];
-    cell.detailTextLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Maximum value: %@", @"Maximum value: %@"), session.maximumValue];
+    cell.detailTextLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Maximum value: %@", @"Maximum value: %@"), session.maximumValue ? session.maximumValue : @"-"];
     return cell;
 }
 

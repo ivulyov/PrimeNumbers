@@ -8,6 +8,13 @@
 
 #import "PrimeNumbersArchive.h"
 
+@interface PrimeNumbersArchive()
+
+@property (nonatomic, strong) NSArray *cachedArray;
+@property (nonatomic, assign) BOOL isDataModifiedOnDiskSinceLastCaching;
+
+@end
+
 @implementation PrimeNumbersArchive
 
 - (NSString *)primeNumbersArchivePath {
@@ -18,7 +25,17 @@
 
 - (NSArray *)archivedNumbers {
     NSString *fileName = [self primeNumbersArchivePath];
-    return [[NSArray alloc] initWithContentsOfFile:fileName];
+    if (self.cachingEnabled) {
+        if (!self.cachedArray || self.isDataModifiedOnDiskSinceLastCaching) {
+            self.cachedArray = [[NSArray alloc] initWithContentsOfFile:fileName];
+        }
+        
+        self.isDataModifiedOnDiskSinceLastCaching = NO;
+        return self.cachedArray;
+    }
+    else {
+        return [[NSArray alloc] initWithContentsOfFile:fileName];
+    }
 }
 
 - (void)updateArchiveWithNumbers:(NSArray *)numbers {
@@ -26,6 +43,7 @@
     NSArray *oldResultsArray = [[NSArray alloc] initWithContentsOfFile:fileName];
     if ([numbers count] > [oldResultsArray count]) {
         [numbers writeToFile:fileName atomically:YES];
+        self.isDataModifiedOnDiskSinceLastCaching = YES;
     }
 }
 
